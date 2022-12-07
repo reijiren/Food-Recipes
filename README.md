@@ -127,7 +127,7 @@ Food Recipes is a web application to share and find any food recipes in this wor
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is an example of things you need to use the application and how to install them.
 
 * [node.js](https://nodejs.org/en/download/)
 
