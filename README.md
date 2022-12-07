@@ -18,6 +18,8 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
+* [Related Project](#related-project)
+* [Contributing](#contributing)
 
 
 
@@ -56,6 +58,62 @@ Food Recipes is a web application to share and find any food recipes in this wor
 <img src="/screenshot/Reset Password.png" alt="reset password page" />
 </details>
 
+<details>
+  <summary>
+    Landing Page
+  </summary>
+<img src="/screenshot/Landing.png" alt="landing page" />
+</details>
+
+<details>
+  <summary>
+    Recipe Detail Page
+  </summary>
+<img src="/screenshot/Recipe Detail.png" alt="recipe detail page" />
+</details>
+
+<details>
+  <summary>
+    Recipe Update Page
+  </summary>
+<img src="/screenshot/Recipe Update.png" alt="recipe update page" />
+</details>
+
+<details>
+  <summary>
+    Profile Page
+  </summary>
+<img src="/screenshot/Profile.png" alt="profile page" />
+</details>
+
+<details>
+  <summary>
+    Add Recipe Page
+  </summary>
+<img src="/screenshot/Add Recipe.png" alt="add recipe page" />
+</details>
+
+<details>
+  <summary>
+    Search Recipe Page
+  </summary>
+<img src="/screenshot/Search Recipe.png" alt="search recipe page" />
+</details>
+
+<details>
+  <summary>
+    Admin Search User Page
+  </summary>
+<img src="/screenshot/search user.png" alt="search user page" />
+</details>
+
+<details>
+  <summary>
+    User Information Page
+  </summary>
+<img src="/screenshot/user detail.png" alt="user detail page" />
+</details>
+
 ### Built With
 
 * [React JS](https://nodejs.org/en/docs/)
@@ -90,6 +148,11 @@ REACT_APP_BACKEND_URL = your_api_url
 ```
 
 
+<!-- RELATED PROJECT -->
+## Related Project
+Food Recipes RESTful API used in this application
+* [Food Recipes API](https://github.com/reijiren/Food-Recipes-API)
+
 
 
 <!-- CONTRIBUTING -->
@@ -102,7 +165,3 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/yourbranch`)
 5. Open a Pull Request
-
-
-
-## Related Project
