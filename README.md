@@ -18,8 +18,8 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Related Project](#related-project)
 * [Contributing](#contributing)
+* [Related Project](#related-project)
 
 
 
@@ -147,14 +147,6 @@ REACT_APP_BACKEND_URL = your_api_url
 
 ```
 
-
-<!-- RELATED PROJECT -->
-## Related Project
-Food Recipes RESTful API used in this application
-* [Food Recipes API](https://github.com/reijiren/Food-Recipes-API)
-
-
-
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -165,3 +157,11 @@ Contributions are what make the open source community such an amazing place to b
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/yourbranch`)
 5. Open a Pull Request
+
+
+<!-- RELATED PROJECT -->
+## Related Project
+Food Recipes RESTful API used in this application
+* [Food Recipes API](https://github.com/reijiren/Food-Recipes-API)
+
+
