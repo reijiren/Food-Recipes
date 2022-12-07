@@ -5,10 +5,6 @@
   <p align="center">
     <image align="center" width="200" src='./assets/' />
   </p>
-
-  <p align="center">
-    <br />
-  </p>
 </p>
 
 
@@ -17,12 +13,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Screenshots](#screenshots)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Related Project](#related-project-backend)
-* [Contact](#contact)
 
 
 
@@ -30,12 +25,43 @@
 ## About The Project
 
 
-Food Recipes is a web application to share and find any food recipes in this world with detailed information such as the recipe’s ingredients and a step-by-step video. Users are able to save and like any recipes they find interesting.
+Food Recipes is a web application to share and find any food recipes in this world with detailed information such as the recipe’s ingredients and a step-by-step video. Users are able to save and like any recipes they find interesting and it will be shown in their profile.
+
+### Screenshots
+<details>
+  <summary>
+    Login Page
+  </summary>
+<img src="/screenshot/Login Page.png" alt="login page" />
+</details>
+
+<details>
+  <summary>
+    Register Page
+  </summary>
+<img src="/screenshot/Register Page.png" alt="register page" />
+</details>
+
+<details>
+  <summary>
+    Forgot Password Page
+  </summary>
+<img src="/screenshot/Forgot Password Page.png" alt="forgot password page" />
+</details>
+
+<details>
+  <summary>
+    Reset Password Page
+  </summary>
+<img src="/screenshot/Reset Password Page.png" alt="reset password page" />
+</details>
 
 ### Built With
 
-* [Node JS](https://nodejs.org/en/docs/)
-* [Express JS](https://expressjs.com/)
+* [React JS](https://nodejs.org/en/docs/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Axios](https://axios-http.com/)
+* [jQuery](https://jquery.com/)
 
 
 <!-- GETTING STARTED -->
@@ -59,7 +85,7 @@ npm install
 ```
 3. Add .env file at your root folder project, and add the following
 ```sh
-API_URL = your_api_url
+REACT_APP_BACKEND_URL = your_api_url
 
 ```
 
