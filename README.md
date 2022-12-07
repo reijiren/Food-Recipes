@@ -46,14 +46,14 @@ Food Recipes is a web application to share and find any food recipes in this wor
   <summary>
     Forgot Password Page
   </summary>
-<img src="/screenshot/Forgot Password Page.png" alt="forgot password page" />
+<img src="/screenshot/Forgot Password.png" alt="forgot password page" />
 </details>
 
 <details>
   <summary>
     Reset Password Page
   </summary>
-<img src="/screenshot/Reset Password Page.png" alt="reset password page" />
+<img src="/screenshot/Reset Password.png" alt="reset password page" />
 </details>
 
 ### Built With
