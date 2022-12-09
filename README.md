@@ -116,11 +116,10 @@ Food Recipes is a web application to share and find any food recipes in this wor
 
 ### Built With
 
-* [React JS](https://reactjs.org/)
+* [React JS](https://nodejs.org/en/docs/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Axios](https://axios-http.com/)
 * [jQuery](https://jquery.com/)
-* [Redux](https://redux.js.org/)
 
 
 <!-- GETTING STARTED -->

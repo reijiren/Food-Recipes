@@ -9,11 +9,11 @@ const ListUser = () => {
     const navigate = useNavigate();
 
     const [queryParam] = useSearchParams();
-    const name = queryParam.get('name');
-    const page = queryParam.get('page');
-    const sort = queryParam.get('sort');
-    const asc = queryParam.get('asc');
-
+    const name = queryParam.get('name') || "";
+    const page = queryParam.get('page') || 1;
+    const sort = queryParam.get('sort') || "name";
+    const asc = queryParam.get('asc') || "asc";
+ 
     const pagination = parseInt(page);
 
     const [search, setSearch] = useState(name);
@@ -22,6 +22,7 @@ const ListUser = () => {
         return state.user;
     })
 
+    console.log(user)
     const token = localStorage.getItem('token');
 
     const onButton = (type) => {
@@ -49,6 +50,7 @@ const ListUser = () => {
     }
 
     useEffect(() => {
+        console.log(name + sort + page + asc)
         dispatch(getList(name, sort, page, asc))
     }, [queryParam])
     
