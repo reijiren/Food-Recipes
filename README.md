@@ -3,7 +3,7 @@
 
   <h3 align="center">Food Recipes</h3>
   <p align="center">
-    <image align="center" width="200" src='./assets/' />
+    <image align="center" width="200" src='/public/FoodRec_logo.png' />
   </p>
 </p>
 
@@ -116,10 +116,11 @@ Food Recipes is a web application to share and find any food recipes in this wor
 
 ### Built With
 
-* [React JS](https://nodejs.org/en/docs/)
+* [React JS](https://reactjs.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Axios](https://axios-http.com/)
 * [jQuery](https://jquery.com/)
+* [Redux](https://redux.js.org/)
 
 
 <!-- GETTING STARTED -->
