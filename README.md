@@ -165,7 +165,7 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- RELATED PROJECT -->
 ## Related Project
-Food Recipes RESTful API used in this application
-* [Food Recipes API](https://github.com/reijiren/Food-Recipes-API)
+[Food Recipes RESTful API](https://food-recipes-rhefrz.cyclic.app) used in this application.
+* [View API Documentation](https://github.com/reijiren/Food-Recipes-API)
 
 
