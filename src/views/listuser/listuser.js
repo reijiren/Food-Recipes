@@ -81,7 +81,7 @@ const ListUser = () => {
                                     ) : (
                                         <div className="icon">
                                             <img 
-                                                src={`${process.env.REACT_APP_BACKEND_URL}/profile/${user.thisUser.image.split('|&&|')[0]}`}
+                                                src={`${user.thisUser.image.split('|&&|')[0]}`}
                                                 alt={`${user.thisUser.name}`}
                                                 height={30}
                                                 width={30}

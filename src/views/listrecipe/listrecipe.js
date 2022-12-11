@@ -82,7 +82,7 @@ const ListRecipe = () => {
                                     ) : (
                                         <div className="icon">
                                             <img 
-                                                src={`${process.env.REACT_APP_BACKEND_URL}/profile/${user.image.split('|&&|')[0]}`}
+                                                src={`${user.image.split('|&&|')[0]}`}
                                                 alt={`${user.name}`}
                                                 height={30}
                                                 width={30}
@@ -116,7 +116,7 @@ const ListRecipe = () => {
             ) : (
                 recipe.data.map((item, index) => (
                     <div key={index}>
-                        <img src={`${process.env.REACT_APP_BACKEND_URL}/recipes/${item.recipeimg.split('|&&|')[0]}`} alt={`pic of ${item.title}`} width='100px' height='100px'/>
+                        <img src={`${item.recipeimg.split('|&&|')[0]}`} alt={`pic of ${item.title}`} width='100px' height='100px'/>
                         <Link to={`/detailrecipe?id=${item.recipeid}`} key={index} className="p-2">{item.title}</Link>
                         <hr />
                     </div>

@@ -60,7 +60,7 @@ const UpdateRecipe = () => {
                 ...form, 
                 title: data.data.data[0].title, 
                 ingredient: data.data.data[0].ingredient,
-                image: data.data.data[0].recipeimg.split('|&&|')[0],
+                image: data.data.data[0].recipeimg,
             });
         }
 
@@ -90,7 +90,7 @@ const UpdateRecipe = () => {
             <div className="add-recipe-form">
                 <form onSubmit={(e) => onSubmit(e)}>
                     <div className="add-photo rounded-2 bg-transparent">
-                        <img src={`${process.env.REACT_APP_BACKEND_URL}/recipes/${form.image.split('|&&|')[0]}`} alt={`pic of ${form.title}`} width='200px' height='200px'/>
+                        <img src={`${form.image.split('|&&|')[0]}`} alt={`pic of ${form.title}`} width='200px' height='200px'/>
                         <input onChange={(e) => {setForm({...form, image: e.target.files[0], changeImg: true})}} type="file" id="formFile" style={{fontSize: '16px', height: '40px', width: '250px'}} />
                     </div>
                     <div className="add-title rounded-2">

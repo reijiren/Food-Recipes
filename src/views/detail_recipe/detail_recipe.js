@@ -89,7 +89,7 @@ const DetRecipe = () => {
                             </div>
                             <div   
                                 className="image-r rounded-4" 
-                                style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${detail.recipeimg.split('|&&|')[0]}')`}}>
+                                style={{backgroundImage: `url('${detail.recipeimg.split('|&&|')[0]}')`}}>
                                 <div className="save-button rounded-4" onClick={handleSave}>
                                     <i className="fa fa-bookmark"></i>
                                 </div>

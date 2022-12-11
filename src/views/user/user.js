@@ -48,7 +48,7 @@ const User = () => {
                         <p>Phone         : {item.phone}</p>
                         <p>Role          : {item.level === 0 ? 'Admin' : 'Customer'}</p>
                         <p>Image         :</p>
-                        <img src={`${process.env.REACT_APP_BACKEND_URL}/profile/${item.image.split('|&&|')[0]}`} alt={`pic of ${item.name}`} width='100px' height='100px'/>
+                        <img src={`${item.image.split('|&&|')[0]}`} alt={`pic of ${item.name}`} width='100px' height='100px'/>
                         <p>Date Created  : {item.date_created}</p>
                         </>
                     ))
