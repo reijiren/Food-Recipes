@@ -55,7 +55,7 @@ const Login = () =>{
                     <LoginLogo />
                     <div className="input-container col-lg-6 col-md-6">
                         <div className="col-md-9 col-sm-12 form-box">
-                            <div className="heading mb-3">Welcome (2)</div>
+                            <div className="heading mb-3">Welcome</div>
                             <div className="heading-2 mb-4">Log in into your existing account</div>
                             <form onSubmit={(e) => onSubmit(e)}>
                                 <div className=" row gap-2">
