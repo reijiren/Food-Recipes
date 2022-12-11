@@ -21,17 +21,17 @@ const Profile = () => {
 
     useEffect(() => {
         const handleOwned = (res) => {
-            setOwned(res.data.data);
+            setOwned(res.data.data || []);
         }
         getOwned(user.id, handleOwned);
 
         const handleLiked = (res) => {
-            setLiked(res.data.data);
+            setLiked(res.data.data || []);
         }
         getLiked(user.id, handleLiked);
 
         const handleSaved = (res) => {
-            setSaved(res.data.data);
+            setSaved(res.data.data || []);
         }
         getSaved(user.id, handleSaved);
     }, [])

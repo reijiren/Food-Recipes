@@ -25,8 +25,6 @@ const DetRecipe = () => {
 
     const onDelete = () => {
         const handleSuccess = (data) => {
-            console.log(data.data);
-
             if(data.data.status !== "success"){
                 alert(data.data.message);
             }else {
@@ -60,7 +58,7 @@ const DetRecipe = () => {
         dataFetched.current = true;
 
         const handleSuccess = (data) => {
-            setDetail(data.data.data[0]);
+            setDetail(data.data.data[0] || {});
         }
         getRecipe(id, handleSuccess);
     }, [])
