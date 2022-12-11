@@ -5,6 +5,9 @@
   <p align="center">
     <image align="center" width="200" src='/public/FoodRec_logo.png' />
   </p>
+  <p align="center">
+    <a href="https://food-recipes-rhefrz.vercel.app">View Demo</a>
+  </p>
 </p>
 
 
