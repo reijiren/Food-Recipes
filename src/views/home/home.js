@@ -23,17 +23,17 @@ const Home = () =>{
 
     useEffect(() => {
         const handleNew = (res) => {
-            setNewRec(res.data.data[0]);
+            setNewRec(res.data.data[0] || {});
         }
         listRecipe('', 'id', 1, 'desc', handleNew);
 
         const handlePopular = (res) => {
-            setPopular(res.data.data);
+            setPopular(res.data.data || []);
         }
         listRecipe('', 'id', 1, 'desc', handlePopular);
 
         const handleRecipes = (res) => {
-            setRecipes(res.data.data);
+            setRecipes(res.data.data || []);
         }
         listRecipe('', 'id', 1, 'asc', handleRecipes);
     }, [])
@@ -73,7 +73,7 @@ const Home = () =>{
                                         ) : (
                                             <div className="icon">
                                                 <img 
-                                                    src={`${process.env.REACT_APP_BACKEND_URL}/profile/${user.image}`}
+                                                    src={`${process.env.REACT_APP_BACKEND_URL}/profile/${user.image.split('|&&|')[0]}`}
                                                     alt={`${user.name}`}
                                                     height={30}
                                                     width={30}
@@ -113,7 +113,7 @@ const Home = () =>{
                 <div className="popular-content">
                     {
                         popular.length !== 0 ? popular.map((e) => (
-                            <Link key={e.recipeid} to={`/detailrecipe?id=${e.recipeid}`} className="bg-image1 rounded mx-3" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.recipeimg}')`}}>
+                            <Link key={e.recipeid} to={`/detailrecipe?id=${e.recipeid}`} className="bg-image1 rounded mx-3" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.recipeimg.split('|&&|')[0]}')`}}>
                                 <h4><b>{e.title}</b></h4>
                             </Link>
                         )) : (
@@ -132,7 +132,7 @@ const Home = () =>{
                     {
                         Object.keys(newRec).length !== 0 ? (
                             <>
-                            <div className="nr-image rounded" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${newRec.recipeimg}')`}}></div>
+                            <div className="nr-image rounded" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${newRec.recipeimg.split('|&&|')[0]}')`}}></div>
                             <div className="new-rec-desc">
                                 <div>
                                     <h3>Healthy {newRec.title} (Quick & Easy)</h3>
@@ -160,7 +160,7 @@ const Home = () =>{
                 <div className="popular-recipe-content">
                     {
                         recipes.length !== 0 ? recipes.map((e) => (
-                            <Link key={e.recipeid} className="pr-image11 rounded" to={`/detailrecipe?id=${e.recipeid}`} style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.recipeimg}')`}}>
+                            <Link key={e.recipeid} className="pr-image11 rounded" to={`/detailrecipe?id=${e.recipeid}`} style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.recipeimg.split('|&&|')[0]}')`}}>
                                 <h4><b>{e.title}</b></h4>
                             </Link>
                         )) : (

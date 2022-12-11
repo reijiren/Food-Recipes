@@ -79,7 +79,7 @@ const Profile = () => {
             </nav>
         </div>
         <div className="profile-container">
-            <div className="profile-picture rounded-circle" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/profile/${user.image}')`}}>
+            <div className="profile-picture rounded-circle" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/profile/${user.image.split('|&&|')[0]}')`}}>
                 <button className="pencil-btn btn-primary" type="button" data-toggle="collapse" data-target="#edit-profile" aria-expanded="false" aria-controls="collapseExample"></button>
             </div>
             <div className="profile-name">
@@ -104,7 +104,7 @@ const Profile = () => {
                         owned.length === 0 ? (
                             <div>No owned recipes!</div>
                         ) : owned.map((e) => (
-                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image}')`}}>
+                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image.split('|&&|')[0]}')`}}>
                                 <p><b>{e.title}</b></p>
                             </Link>
                         ))
@@ -115,7 +115,7 @@ const Profile = () => {
                         saved.length === 0 ? (
                             <div>No saved recipes!</div>
                         ) : saved.map((e) => (
-                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image}')`}}>
+                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image.split('|&&|')[0]}')`}}>
                                 <p><b>{e.title}</b></p>
                             </Link>
                         ))
@@ -126,7 +126,7 @@ const Profile = () => {
                         liked.length === 0 ? (
                             <div>No liked recipes!</div>
                         ) : liked.map((e) => (
-                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image}')`}}>
+                            <Link to={`/detailrecipe?id=${e.id}`} key={e.id} className="profile-recipe-img rounded-2" style={{backgroundImage: `url('${process.env.REACT_APP_BACKEND_URL}/recipes/${e.image.split('|&&|')[0]}')`}}>
                                 <p><b>{e.title}</b></p>
                             </Link>
                         ))
