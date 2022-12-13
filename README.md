@@ -3,7 +3,7 @@
 
   <h3 align="center">Food Recipes</h3>
   <p align="center">
-    <image align="center" width="200" src='/public/FoodRec_logo.png' />
+    <image align="center" width="400" src='/public/frlogo.png' />
   </p>
   <p align="center">
     <a href="https://food-recipes-rhefrz.vercel.app" target="_blank">View Demo</a>
@@ -16,8 +16,9 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Project Structure](#project-structure)
   * [Screenshots](#screenshots)
-  * [Built With](#built-with)
+  * [Package Modules](#package-modules)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -31,6 +32,22 @@
 
 
 Food Recipes is a web application to share and find any food recipes in this world with detailed information such as the recipe’s ingredients and a step-by-step video. Users are able to save and like any recipes they find interesting and it will be shown in their profile.
+
+### Project Structure
+```
+|── Food-Recipes
+   |── public            # Public Assets
+   |── screenshot        # Screenshots of the application
+   |── src               # Project source code
+       |── assets        # Application assets
+       |── component     # Application components
+       |── redux         # State management
+       |── router        # Endpoint
+       |── views         # Pages source code
+   |── .env              # Environment variables   
+   |── .gitignore        # Files that should be ignored
+   |── README.md         # Readme
+```
 
 ### Screenshots
 <details>
@@ -117,13 +134,16 @@ Food Recipes is a web application to share and find any food recipes in this wor
 <img src="/screenshot/user detail.png" alt="user detail page" />
 </details>
 
-### Built With
+### Package Modules
+
+Below are lists of modules used in this application:
 
 * [React JS](https://reactjs.org/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Axios](https://axios-http.com/)
 * [jQuery](https://jquery.com/)
 * [Redux](https://redux.js.org/)
+* [React Router DOM](https://www.npmjs.com/package/react-router-dom)
 
 
 <!-- GETTING STARTED -->
